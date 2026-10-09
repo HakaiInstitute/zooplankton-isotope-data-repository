@@ -1,0 +1,41 @@
+name: Create initialization issue on repository dispatch
+on:
+    push:
+      branches: main
+
+jobs:
+  create_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create issue
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const fs = require('fs')
+            const org = 'HakaiInstitute'
+            const team_slug = 'Data Mobilization Team'
+            const teamMembers = await github.teams.listMembersInOrg({
+                org,
+                team_slug,
+            })
+            const reviewer = teamMembers.data.map(member => member.login)
+
+            // Read the issue body from a file
+            const issueBody = fs.readFileSync('.github/ISSUE_TEMPLATE/initialize-dataset.md', 'utf8')
+
+
+            const issue = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'Initialize dataset',
+              body: issueBody,
+              assignees: github.context.actor,
+              reviewers: reviewer
+            }
+            github.issues.create(issue)
+      - name: delete action
+        run: rm -rf .github/workflows/init-dataset-repo.yaml
+      - name: delete issue template
+        run: rm -rf .github/ISSUE_TEMPLATE/initialize-dataset.md
