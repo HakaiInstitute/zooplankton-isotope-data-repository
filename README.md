@@ -8,14 +8,14 @@
 
 <div align='center'>
 
-[![DOI](https://img.shields.io/badge/DOI-10.XXXXX%2FXXXXX-blue)](https://doi.org/10.XXXXX/XXXXX)
+[![DOI](https://img.shields.io/badge/DOI-10.XXXXX%2FXXXXX-blue)](https://doi.org/ 10.21966/tcp2-mm86)
 
 </div>
 
 
 # Zooplankton Isotope Data Repository
 
-Include record citation here.
+(https://catalogue.hakai.org/dataset/ca-cioos_dbb33efe-c207-4d9c-abef-2350595bf47a)
 
 ## Abstract
 
