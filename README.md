@@ -22,7 +22,7 @@ Jordison, D., Bergshoeff, J., Bedard, K., & Kellogg, C. (2026). Size-fractionate
 This dataset contains size-fractionated zooplankton isotope data obtained from collecting samples with vertical net hauls by the Hakai Ocean Observing Program. The sample is poured through a series of sieves and filtered onto GF/F filters prior to being sent for isotope analysis at the University of California Davis Stable Isotope Facility. These samples have been collected biweekly to monthly from 2015-2025 in the northern Strait of Georgia, British Columbia, approximately every 4-6 weeks 2012-2021 between Kwakshua Channel and Rivers Inlet, and the summers of 2015 and 2016 in Johnstone Strait on British Columbia's Central Coast.
 
 This data package includes:
-- Size-fractionated stable isotope results
+- Size-fractionated stable isotope results and metadata
 - Tow Metadata corresponding to samples collected
 
 Data packages only include results that have gone through our metadata QC protocol. Users can reach out to request data not included and for collaborative opportunities.
