@@ -8,14 +8,14 @@
 
 <div align='center'>
 
-[![DOI](https://img.shields.io/badge/DOI-10.21966/tcp2-mm86-blue)](https://doi.org/ 10.21966/tcp2-mm86)
+[![DOI](https://img.shields.io/badge/DOI-10.21966/tcp2-mm86-blue)](https://doi.org/10.21966/tcp2-mm86)
 
 </div>
 
 
 # Zooplankton Isotope Data Repository
 
-(https://catalogue.hakai.org/dataset/ca-cioos_dbb33efe-c207-4d9c-abef-2350595bf47a)
+Jordison, D., Bergshoeff, J., Bedard, K., & Kellogg, C. (2026). Size-fractionated zooplankton biomass and isotopes along the BC coast (v1.1). Hakai Institute. https://doi.org/10.21966/tcp2-mm86
 
 ## Abstract
 
