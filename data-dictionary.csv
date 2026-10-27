@@ -1,1 +1,68 @@
-variable,long_name,units,standard_name,comment
+variable,units,data_file_name,comment
+net_1_counts_per_m,,combinedTow.csv,Determined by flow meter calibration. Null if no calibration done prior to sampling event.
+Date,,combinedTow.csv,
+Work Area,,"combinedTow.csv, Combined_Iso_Data.csv",
+Site ID,,"combinedTow.csv, Combined_Iso_Data.csv",see station-log.csv for list
+Line Out Depth,,combinedTow.csv,
+Pressure Transducer Depth (m),m,combinedTow.csv,Used attached RBRsolo to net
+Haul Type,,combinedTow.csv,"Vertical, Horizontal, or Oblique (V, H, O)"
+Hakai ID,,combinedTow.csv,Links tow metadata to sample metadata and results
+Field Staff,,combinedTow.csv,
+Latitude,degree decimal,combinedTow.csv,"Assigned to station, see station-log.csv for list"
+Longitude,degree decimal,combinedTow.csv,"Assigned to station, see station-log.csv for list"
+tow_lat,degree decimal,combinedTow.csv,Grabbed on station when possible using a gps enabled device
+tow_long,degree decimal,combinedTow.csv,Grabbed on station when possible using a gps enabled device
+distance_from_sample_site,m,combinedTow.csv,
+Tow Start Time,PST or PDT,combinedTow.csv,"When no other times recorded, time on station put here. Identified with EV Tow Time Flag."
+Tow Bottom Time,PST or PDT,combinedTow.csv,Originally not recorded
+Tow End Time,PST or PDT,combinedTow.csv,Originally not recorded
+Tow Duration,h:mm:ss,combinedTow.csv,
+Tow Time Flag,,combinedTow.csv,"EV: Estimated Value indicates time on station only recorded. SVC: Suspect Value Check. Use with caution. SVD: Suspect Value Delete, do not use. AV: Accepted Value"
+Net Configuration,,combinedTow.csv,Single net or Bongo nets
+Mesh Size (um),um,combinedTow.csv,Mesh size of net
+Net Dim. (cm),cm,combinedTow.csv,
+Net Length (cm),cm,combinedTow.csv,
+Flow Meter,,combinedTow.csv,ID of Flow Meter Used. Initially not recorded.
+Flowmeter Before,revolutions,combinedTow.csv,At beginning of tow
+Flowmeter After,revolutions,combinedTow.csv,At end of tow
+Revolutions,counts,combinedTow.csv,
+Flow Meter Volume,,"combinedTow.csv, Combined_Iso_Data.csv","Volume calculated by flowmeter before, flowmeter after, net dimensions, and net_1_counts_per_m. IF counts_per_m IS NULL THEN counts_per_m := 999999 / 26873; as indicated by GO flowmeter using standard speed rotator constant"
+Flow Meter Volume Flag,,"combinedTow.csv, Combined_Iso_Data.csv","SVC: Suspect Value Check. Use with caution. SVD: Suspect Value Delete, do not use. AV: Accepted Value"
+Tow Distance,,combinedTow.csv,"Calculated by flowmeter before, flowmeter after, and net_1_counts_per_m. IF counts_per_m IS NULL THEN counts_per_m := 999999 / 26873; as indicated by GO flowmeter using standard speed rotator constant"
+Depth Volume,,"combinedTow.csv, Combined_Iso_Data.csv",Volume calculated by Line Out Depth and net dimensions
+Volume Ratio,,"combinedTow.csv, Combined_Iso_Data.csv",(Flow Meter Volume) / (Depth Volume)
+isotope,,combinedTow.csv,Sample IDs associated with this tow. Can be referenced in Combined_Iso_Data.csv
+fatty_acids,,combinedTow.csv,Sample IDs associated with this tow. Can be referenced in relevant metadata record.
+total_biomass,,combinedTow.csv,Sample IDs associated with this tow. Can be referenced in other repo associated with this metadata record.
+microscopy,,combinedTow.csv,Sample IDs associated with this tow. Can be referenced in relevant metadata record.
+Quality Log,,"combinedTow.csv, Combined_Iso_Data.csv","All comments made by technicians, analysing lab, and QC process listed here."
+HakaiNetID,,Combined_Iso_Data.csv,Same as Hakai ID in combinedTow.csv
+ReplicateNumber,,Combined_Iso_Data.csv,"Filter number associated with tow, ascending from 1 to max number of filters for that net."
+SizeFraction_um_,um,Combined_Iso_Data.csv,Mesh size of sieve associated with that filter
+AnalyzedWeight_mg_,mg,Combined_Iso_Data.csv,Weight of sample encapsulated for isotopic analysis
+FractionOfSample,Fraction of 1,Combined_Iso_Data.csv,"If net split in half for another sample type, fraction will be 0.5"
+Collected,,Combined_Iso_Data.csv,Same as Tow Start Time in combinedTow.csv
+collected_flag,,Combined_Iso_Data.csv,EV: Estimated Value indicates time on station only recorded. 
+HakaiID,,Combined_Iso_Data.csv,Sample ID. Same as those listed in isotope column of combinedTow.csv
+WeightBefore_mg_,mg,Combined_Iso_Data.csv,Precombusted filter weight with no sample
+WeightAfter_mg_,mg,Combined_Iso_Data.csv,Precombusted filter weight with dried sample
+FilterWetWeight,mg,Combined_Iso_Data.csv,Precombusted filter weight with wet sample
+FilterSize_mm_,mm,Combined_Iso_Data.csv,
+FilterType,,Combined_Iso_Data.csv,"If not GF/F, likely a petri dish. Identified by 'T' in Sample ID"
+Filter Portion,,Combined_Iso_Data.csv,
+total_beam_n,,Combined_Iso_Data.csv,
+percentage_n,,Combined_Iso_Data.csv,
+ugN,ug,Combined_Iso_Data.csv,
+delta_air,,Combined_Iso_Data.csv,the difference in the 15N:14N ratio of the sample to atmospheric air
+corr_delta15n,,Combined_Iso_Data.csv,
+total_beam_c,,Combined_Iso_Data.csv,
+percentage_c,,Combined_Iso_Data.csv,
+ugC,ug,Combined_Iso_Data.csv,
+delta_pdb,,Combined_Iso_Data.csv,the difference in the 13C:12C ratio of the sample to that of Vienna Pee Dee Belemnite
+corr_delta13c,,Combined_Iso_Data.csv,
+C_N,,Combined_Iso_Data.csv,ratio of C:N
+LabTechnician,,Combined_Iso_Data.csv,
+AnalyzingLab,,Combined_Iso_Data.csv,
+CFlag,,Combined_Iso_Data.csv,"SVC: Suspect Value Check. Use with caution. SVD: Suspect Value Delete, do not use. AV: Accepted Value. Flag indicated from analysing lab."
+NFlag,,Combined_Iso_Data.csv,"SVC: Suspect Value Check. Use with caution. SVD: Suspect Value Delete, do not use. AV: Accepted Value. Flag indicated from analysing lab."
+C_NFlag,,Combined_Iso_Data.csv,"SVC: Suspect Value Check. Use with caution. SVD: Suspect Value Delete, do not use. AV: Accepted Value. Flag indicated from analysing lab."
