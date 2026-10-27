@@ -33,7 +33,7 @@ https://github.com/HakaiInstitute/zooplankton-isotope-data-repository/blob/main/
 
 ## Reports
 
-Any link to reports associated with this dataset. The reports can be made available within this same repository.
+Future reports associated with this dataset will be linked here.
 
 ## How to Contribute
 
